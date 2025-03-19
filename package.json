@@ -68,6 +68,7 @@
     "zod": "latest"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^22.13.10",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -78,5 +79,15 @@
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "bcrypt",
+      "esbuild",
+      "prisma",
+      "sharp"
+    ]
   }
 }
