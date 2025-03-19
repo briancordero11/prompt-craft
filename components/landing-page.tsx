@@ -12,15 +12,12 @@ import { Footer } from "@/components/footer"
 export function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
-      <Header />
       <Hero />
       <Features />
       <GameModes />
       <HowItWorks />
       <Testimonials />
       <Pricing />
-      <Footer />
     </div>
   )
 }
-
